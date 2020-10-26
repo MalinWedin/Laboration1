@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+}
+
+body {
+    background: rgb(211, 202, 193);
+}
+
+.flex {
+    display: flex;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.divBox {
+    background: rgb(211, 194, 176);
+    width: 100%;
+    height: 5rem;
+}
+
+.buttonDesign {
+    background: rgb(187, 173, 160);
+    border-radius: 50rem;
+    width: 10rem;
+    height: 2rem;
+    border: none;
+    margin-top: 4rem;
+}
+
+.buttonDesign:hover {
+    background: rgb(211, 192, 173);
+}
