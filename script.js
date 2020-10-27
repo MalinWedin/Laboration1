@@ -33,19 +33,23 @@ function inTheMoodForACupOfCoffee() {
         alert('Då rekomenderar jag starkt att du går till da Matteo på Vallgatan, gott kaffe!')
     }
     else {
-        alert('Gå dit ändå, ät en god bulle!')
+        alert('Gå till da Matteo ändå, ät en god bulle!')
     }
 }
 
 function atDaMatteo() {
-    alert('Du är nu framme på da Matteo och du ska betala i kassan men inser att din plånbok inte längre ligger i din ficka.')
+    alert('Du är nu framme på da Matteo och du ska beställa i kassan men inser att din plånbok inte längre ligger i din ficka.')
 }
 
 function atCashierDaMatteo() {
     const missingWallet = prompt('Vad gör du nu, suckar uppgivet  eller skriker i förtvivlan: min plånbok är borta?')
-    if (missingWallet == 'suckar uppgivet')
-        alert('Någon knackar dig på axeln')
-    const doYouTurnAround = prompt('Vänder du på dig för att se vem som knackar dig på axeln?')
-    if (doYouTurnAround == 'ja')
-        alert('Du vänder dig om och ser Glenn Hysen som säger: Klart du ska fika, jag bjuder.')
+    if (missingWallet == 'suckar uppgivet') {
+        alert('Någon knackar dig på axeln!')
+        const doYouTurnAround = prompt('Vänder du dig om för att se vem som knackar dig på axeln?')
+        if (doYouTurnAround == 'ja')
+        alert('Du vänder dig om och ser Håkan Hellström som säger: Klart du ska ha fika, jag bjuder!')
+    }    
+    if (missingWallet == 'skriker i förtvivlan') {
+        alert('Baristan ber dig gå åt sidan medan du letar efter din plånbok')
+}    
 }
