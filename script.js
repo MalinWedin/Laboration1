@@ -33,7 +33,7 @@ function inTheMoodForACupOfCoffee() {
         alert('Då rekomenderar jag starkt att du går till da Matteo på Vallgatan, gott kaffe!')
     }
     else {
-        alert('Gå till da Matteo ändå, ät en god bulle!')
+        alert('Gå till da Matteo på vallgatan ändå och ät en god bulle!')
     }
 }
 
