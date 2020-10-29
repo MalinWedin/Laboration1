@@ -1,30 +1,37 @@
 
-// Startar genom att trycka på start 
+// Startar genom att trycka på start-knappen 
 function startGame() {
     const whatsYourNamne = prompt('Hej, vad heter du?')
-    alert('Hej' + ' ' + whatsYourNamne + ',' + ' ' + 'häng med på en tur i Göteborg!')
-    //console.log(whatsYourNamne)
+    alert('Hej' + ' ' + whatsYourNamne + ',' + ' ' + 'häng med!')
+    
 }
 
 // Välj hur du vill ta dig till Domkyrkan
 function firstTransport() {
-    const goToFirstLocation = prompt('Vill du åka spårvagn eller promenera?')
+    const goToFirstLocation = prompt('Du ska ta dig till Domkyrkan. Vill du åka spårvagn eller promenera?')
     if (goToFirstLocation == 'spårvagn') {
         alert('Åk spårvagn nr 11 till Domkyrkan')
     }
-    else {
+    else if (goToFirstLocation == 'promenera') {
         alert('Promenera mot Domkyrkan. Men se upp, här i Göteborg har spårvagnarna alltid företräde.')
     }
-    //console.log(goToFirstLocation)
+    else {
+        alert('Här blev det fel. Välj "spårvagn" eller "promenera"')
+        firstTransport()
+    }   
 }
 // Vad tycker du om Domkyrkan
 function whatDoYouThinkofDomkyrkan() {
-    const theLookofDomkyrkan = prompt('Nu är du framme vid Domkyrkan, vad tycker du? Är den fin eller ful?')
+    const theLookofDomkyrkan = prompt('Nu är du framme vid Domkyrkan, vad tycker du, är den fin eller ful?')
     if (theLookofDomkyrkan == 'ful') {
-        alert('Synd, jag tycker att den är fin!')
+        alert('Va! Dålig smak!')
+    }
+    else if (theLookofDomkyrkan == 'fin') {
+        alert('Ja, visst är den fin!')
     }
     else {
-        alert('Ja, visst är den fin!')
+        alert('Här blev det fel. Välj ful eller fin')
+        whatDoYouThinkofDomkyrkan()
     }
 }
 
@@ -34,28 +41,36 @@ function inTheMoodForACupOfCoffee() {
     if (drinkCoffee == 'ja') {
         alert('Då rekomenderar jag starkt att du går till da Matteo på Vallgatan, gott kaffe!')
     }
+    else if (drinkCoffee == 'nej') {
+        alert('Då kan du gå till da Matteo på Vallgatan och äta en god bulle!')
+    }
     else {
-        alert('Gå till da Matteo på vallgatan ändå och ät en god bulle!')
+        alert('Här blev det fel. Välj ja eller nej.')
+        inTheMoodForACupOfCoffee()
     }
 }
 // På da Matteo
 function atDaMatteo() {
-    alert('Du är nu framme på da Matteo och du ska beställa i kassan men inser att din plånbok inte längre ligger i din ficka.')
+    alert('Du är nu framme på da Matteo.')
 }
 
-// I kassan på da Matteo
+
+// Beställa i kassan
 function atCashierDaMatteo() {
-    const missingWallet = prompt('Vad gör du nu, suckar uppgivet  eller skriker i förtvivlan: min plånbok är borta?')
-    if (missingWallet == 'suckar uppgivet') {
-        alert('Någon knackar dig på axeln!')
-        const doYouTurnAround = prompt('Vänder du dig om för att se vem som knackar dig på axeln?')
-        if (doYouTurnAround == 'ja')
-        alert('Du vänder dig om och ser Håkan Hellström som säger: Klart du ska ha fika, jag bjuder!')
-        alert('Du tar din kopp kaffe och sätter dig vid en bänk mot väggen och njuter av solen.')
-        return
-    }    
-    if (missingWallet == 'skriker i förtvivlan') {
-        alert('Baristan ber dig gå åt sidan medan du letar efter din plånbok')
-        alert('Du lämnar da Matteo och möts av ett grått och regnigt Göteborg.')
-}    
+    const canIHaveYourOrder = prompt('Hej! Vad får det lov att vara?')
+        if (canIHaveYourOrder == 'kaffe') {
+            alert('En kaffe till dig!')
+        }
+        else if (canIHaveYourOrder == 'bulle') {
+            alert('En bulle till dig!')
+        }
+        else {
+            alert('Ops! Välj kaffe eller bulle')
+            atCashierDaMatteo()
+        }        
 }
+
+function outdoorSeating() {
+    alert('Nu får du sätta dig på den soliga uteserveringen och njuta, hoppas vi ses igen! Hej då!')
+}
+
