@@ -30,7 +30,7 @@ function whatDoYouThinkofDomkyrkan() {
         alert('Ja, visst är den fin!')
     }
     else {
-        alert('Här blev det fel. Välj ful eller fin')
+        alert('Här blev det fel. Välj "ful" eller "fin"')
         whatDoYouThinkofDomkyrkan()
     }
 }
@@ -45,7 +45,7 @@ function inTheMoodForACupOfCoffee() {
         alert('Då kan du gå till da Matteo på Vallgatan och äta en god bulle!')
     }
     else {
-        alert('Här blev det fel. Välj ja eller nej.')
+        alert('Här blev det fel. Välj "ja" eller "nej"')
         inTheMoodForACupOfCoffee()
     }
 }
@@ -64,8 +64,11 @@ function atCashierDaMatteo() {
         else if (canIHaveYourOrder == 'bulle') {
             alert('En bulle till dig!')
         }
+        else if (canIHaveYourOrder == 'kaffe och bulle') {
+            alert('Bra val, här har du ditt kaffe och din bulle!')
+        }    
         else {
-            alert('Ops! Välj kaffe eller bulle')
+            alert('Här blev det fel. Välj "kaffe" eller "bulle"')
             atCashierDaMatteo()
         }        
 }

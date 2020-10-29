@@ -3,6 +3,7 @@
 }
 
 body {
+    margin-top: 15rem;
     background: rgb(211, 202, 193);
 }
 
@@ -15,21 +16,24 @@ body {
     align-items: center;
 }
 
-.divBox {
-    background: rgb(211, 194, 176);
-    width: 100%;
-    height: 5rem;
-}
+
 
 .buttonDesign {
-    background: rgb(187, 173, 160);
+    background: rgb(196, 185, 176);
     border-radius: 50rem;
     width: 10rem;
     height: 2rem;
     border: none;
-    margin-top: 4rem;
+    margin-top: 2rem;
+    font-size: 1rem;
 }
 
 .buttonDesign:hover {
-    background: rgb(211, 192, 173);
+    background: rgb(211, 207, 203);
+    cursor: pointer;
+    
+}
+
+.buttonDesign:focus {
+    outline: none;
 }
