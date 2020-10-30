@@ -7,14 +7,36 @@ body {
     background: rgb(211, 202, 193);
 }
 
+img {
+    height: 11rem;
+}
+
+h1 {
+    font-weight: lighter;
+}
+
+h2 {
+    font-weight: lighter;
+}
+
 .flex {
     display: flex;
+}
+
+.margin-top {
+    margin-top: 2rem;
 }
 
 .center {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.sunnyDay {
+    justify-content: flex-end;
+    margin-top: -9rem;
+    margin-right: 12rem;
 }
 
 .buttonDesign {
@@ -28,8 +50,9 @@ body {
 }
 
 .buttonDesign:hover {
-    background: rgb(211, 207, 203);
+    background: rgb(197, 192, 186);
     cursor: pointer;
+    width: 13rem;
     
 }
 
